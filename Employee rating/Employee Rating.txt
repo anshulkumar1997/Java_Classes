@@ -1,0 +1,149 @@
+Employee rating
+DreamTek Company provides a rating to its employees based on the “Certification” they have completed.  For each certification completed by the employee the rating will be increased by one. Based on the rating the company planned to provide an increment for the employees. For the current year , the employees can take up any of the certification courses. They are:
+
+a.       JAVA
+
+b.      ORACLE
+
+c.       GCUX
+
+d.      CCNA
+
+e.      AWS
+
+For each certification the rating will be 1. If an employee has completed three certifications, their rating will be 3. The employee is supposed to take up the certification suggested by the company. If the employee takes up some other certification, their rating will not be updated for that certification.
+
+The increment for the employee will be given based on the below criteria:
+
+Rating
+
+Increment Percentage
+
+1
+
+2%
+
+2
+
+3.5%
+
+3
+
+5%
+
+4
+
+7.5%
+
+5
+
+10%
+
+ 
+
+Help the DreamTek Company to develop a java application to do the above task.
+
+Consider the below class:
+
+
+In the Employee class include the given attributes methods and constructor with the access specifiers as specified in the class diagram.
+
+The constructors are used to initialize the value and the getter methods are used to retrieve the value.
+
+The findRating() method should set the rating based on the certification completed by the employee.
+
+The calculateIncrement() method should calculate the increment based on the rating and update the salary with the incremented amount. This method should return the increment amount. (For example: if the salary is 50000, and the incremented amount is 4000, then this method should return 4000, and  update the salary as 54000).
+
+In the Main class, Get the details as shown in the sample input and create an object for the Employee class; invoke the appropriate methods to get the results as shown in the sample output.
+
+Sample Input1:
+
+Enter the employee id:
+
+TEK163
+
+Enter the salary:
+
+50000
+
+Enter the no of certification complete:
+
+3
+
+Enter the certification names:
+
+JAVA
+
+ORACLE
+
+CCNA
+
+Sample Output1:
+
+Your rating is 3
+
+Increment amount is 2500.00
+
+Current salary 52500.00
+
+ Sample Input2:
+
+Enter the employee id:
+
+TEK163
+
+Enter the salary:
+
+50000
+
+Enter the no of certification complete:
+
+3
+
+Enter the certification names:
+
+JAVA
+
+J2EE
+
+CCNA
+
+Sample Output2:
+
+Your rating is 2
+
+Increment amount is 1750.00
+
+Current salary 51750.00
+
+ 
+
+Sample Input3:
+
+Enter the employee id:
+
+TEK163
+
+Enter the salary:
+
+50000
+
+Enter the no of certification complete:
+
+3
+
+Enter the certification names:
+
+PHP
+
+J2EE
+
+MYSQL
+
+Sample Output3:
+
+Your rating is 0
+
+Increment amount is 0.00
+
+Current salary 50000.00
