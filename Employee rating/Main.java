@@ -6,7 +6,7 @@ public class Main{
     double d,in;
     int i,r,n;
     System.out.println("Enter the employee id:");
-    s=sc.nextLine();
+    s=sc.next();
     System.out.println("Enter the salary:");
     d=sc.nextDouble();
     System.out.println("Enter the no of certification complete:");
@@ -14,7 +14,7 @@ public class Main{
     String[] cn=new String[n];
     System.out.println("Enter the certification names:");
     for (i=0;i<cn.length ;i++ )
-        cn[i]=sc.nextLine();
+        cn[i]=sc.next();
     Employee e = new Employee(s,d,cn);
     e.findRating();
     in=e.calculateIncrement();
